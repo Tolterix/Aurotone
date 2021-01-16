@@ -4,10 +4,10 @@ import Logo from '../../Assets/Logo.png'
 import { GlobalContext } from '../../GlobalState'
 import { Link } from 'react-router-dom'
 
-  
+const getContext = () => React.useContext(GlobalContext)
 
-export default function Footer() {
-  let context = React.useContext(GlobalContext)
+function Footer() {
+  let context = getContext()
 
   let footer_siteMap = context.siteMap.map(sitePage =>{
     return (
@@ -38,12 +38,4 @@ export default function Footer() {
   );
 }
 
-
-  
-
-
-
-
-
-
-
+export { getContext, Footer }
