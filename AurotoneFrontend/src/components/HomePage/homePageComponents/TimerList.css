@@ -1,0 +1,25 @@
+.timers {
+    display: grid;
+    grid-template-columns: 3fr;
+    flex-direction: row;
+    grid-template-areas: "time";
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    
+}
+
+.time{
+    width: 90vw;
+    height: 20vw;
+    border: 5px inset orange;
+    
+    border-radius: 10px;
+}
+
+.bro {
+    grid-area: time;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}

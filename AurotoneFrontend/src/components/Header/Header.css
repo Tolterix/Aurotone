@@ -1,0 +1,17 @@
+.header_toolbar {  
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+.header_logo {
+    height: 100px;
+    width: auto;
+}
+.header_icon{
+  display:flex;
+  justify-content: flex-end space-around;
+  padding: 5px;
+}
+h1{
+  align-content: center;
+}

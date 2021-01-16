@@ -1,0 +1,23 @@
+.footer_toolbar {  
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.footer_logo {
+    height: 80px;
+    width: 130px;
+}
+#links{
+ display: flex; 
+ width: 25vw;
+ justify-content: space-between;
+ flex-direction: row;
+}
+
