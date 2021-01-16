@@ -1,3 +1,3 @@
 # Aurotone
 
-![til](./Molecule.gif)
+![til](./ProjectDesign/Molecule.gif)
