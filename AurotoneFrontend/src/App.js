@@ -1,5 +1,5 @@
-import './App.css';
 import React from 'react';
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,39 +7,34 @@ import {
   
 } from 'react-router-dom';
 
-import Registration from './components/Registration/Registration';
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer' 
-import Login from './components/Login/Login'
-import HomePage from './components/HomePage/homePage';
+import Footer from './components/Footer/Footer'
 
-
-function App() {
+export default function App() {
 
   return (
-    
     <Router>
       <Header />
-
+      
       <Switch>
         <Route exact path='/'>
           {/*Put homepage here */}
         </Route>
 
         <Route exact path='/LandingPage'>
-          <LandingPage />
+          {/* <LandingPage /> */}
         </Route>
 
         <Route exact path='/LoginPage'>
-          <LoginPage />
+          {/* <LoginPage /> */}
         </Route>
 
         <Route exact path='/ProblemBoardPage'>
-          <ProblemBoardPage />
+          {/* <ProblemBoardPage /> */}
         </Route>
 
         <Route path='/'>
-          <ProblemBoardPage />
+          {/* <ProblemBoardPage /> */}
         </Route>
       </Switch>
 
@@ -48,5 +43,3 @@ function App() {
     
   );
 }
-
-export default App;

@@ -1,12 +1,16 @@
 import React from "react";
 
-const StateContext = React.createContext({});
+const GlobalContext = React.createContext({});
 
 
-const StateProvider = (props) => {
+const GlobalProvider = (props) => {
 
   const initialState = {
-    
+    AppName: 'Aurotone',
+    siteMap: [
+      'This',
+      'That',
+    ],
     setState: (newState) => {
       updateState((state) => {
         return { ...state, ...newState };
@@ -17,10 +21,10 @@ const StateProvider = (props) => {
   const [state, updateState] = React.useState(initialState);
 
   return (
-    <StateContext.Provider value={state}>
+    <GlobalContext.Provider value={state}>
       {props.children}
-    </StateContext.Provider>
+    </GlobalContext.Provider>
   );
 };
 
-export { StateContext, StateProvider };
+export { GlobalContext, GlobalProvider };

@@ -1,0 +1,23 @@
+html {
+    background-color: #131313;
+    color: white;
+}
+
+a {
+    color: #40FF40;
+}
+
+.app_small_logo {
+    width:  5vw;;
+    height: 4vw;
+}
+
+.app_medium_logo {
+    width:  10vw;;
+    height: 8vw;
+}
+
+.app_large_logo {
+    width:  15vw;;
+    height: 12vw;
+}

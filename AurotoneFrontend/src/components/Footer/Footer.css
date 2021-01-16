@@ -1,23 +1,24 @@
-.footer_toolbar {  
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  left: 0;
+.footer {
+  display:        flex;
+  flex-direction: row;
   bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  align-items: center;
-}
-.footer_logo {
-    height: 80px;
-    width: 130px;
-}
-#links{
- display: flex; 
- width: 25vw;
- justify-content: space-between;
- flex-direction: row;
 }
 
+.footer_left {
+  text-align: left;
+  float:      left;
+  width:      33vw;
+}
+
+.footer_center {
+  left:       0;
+  right:      0;
+  text-align: center;
+  width:      33vw;
+}
+
+.footer_right {
+  float:      right;
+  text-align: right;
+  width:      33vw;
+}
