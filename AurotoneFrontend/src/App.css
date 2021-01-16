@@ -7,17 +7,37 @@ a {
     color: #40FF40;
 }
 
+button {
+    display:      block;
+    background:   none;
+	color:        inherit;
+    border:     #208820;
+    border-style: ridge;
+    border-width: .2vw;
+	padding:      5px;
+	font:         inherit;
+	cursor:       pointer;
+    outline:      inherit;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
 .app_small_logo {
-    width:  5vw;;
+    width:  5vw;
     height: 4vw;
 }
 
 .app_medium_logo {
-    width:  10vw;;
+    width:  10vw;
     height: 8vw;
 }
 
 .app_large_logo {
-    width:  15vw;;
+    width:  15vw;
     height: 12vw;
+}
+
+.external_small_logo {
+    width:  2vw;
+    height: 2vw;
 }

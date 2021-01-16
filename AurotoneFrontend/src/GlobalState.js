@@ -6,6 +6,7 @@ const GlobalContext = React.createContext({});
 const GlobalProvider = (props) => {
 
   const initialState = {
+    firstTime: true,
     AppName: 'Aurotone',
     siteMap: [
       'This',

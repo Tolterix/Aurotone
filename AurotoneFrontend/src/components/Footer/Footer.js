@@ -1,13 +1,12 @@
 import React from 'react'
 import './Footer.css'
 import Logo from '../../Assets/Logo.png'
+import Twitter from '../../Assets/Twitter.png'
 import { GlobalContext } from '../../GlobalState'
 import { Link } from 'react-router-dom'
 
-const getContext = () => React.useContext(GlobalContext)
-
-function Footer() {
-  let context = getContext()
+export default function Footer() {
+  let context = React.useContext(GlobalContext)
 
   let footer_siteMap = context.siteMap.map(sitePage =>{
     return (
@@ -30,12 +29,12 @@ function Footer() {
 
       <div className='footer_right'>
         <h3>
-          <a id='Twitter' href="https://twitter.com">Follow us on Twitter!</a>
+          <a id='Twitter' href="https://twitter.com">
+            <img src={Twitter} alt='Twitter' className='external_small_logo' />
+          </a>
         </h3>
       </div>
 
     </footer>
   );
 }
-
-export { getContext, Footer }

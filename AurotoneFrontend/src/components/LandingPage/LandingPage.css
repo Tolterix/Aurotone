@@ -1,0 +1,36 @@
+label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#app_name {
+    width: 75vw;
+    font-size: 13vw;
+}
+
+#app_motto {
+    width: 20vw;
+    font-size: 2.5vw;
+}
+
+#app_purpose {
+    width: 40vw;
+    font-size: 1.4vw;
+}
+
+/*This section is for the exit_landing Link that React builds*/
+a#exit_landing{
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align:   center;
+    font-size:    3vw;
+}
+
+img.app_small_logo {
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+}
