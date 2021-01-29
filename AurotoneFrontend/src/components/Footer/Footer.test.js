@@ -1,5 +1,4 @@
-import { mount } from "enzyme"
-import { getContext, Footer } from './Footer'
+import { Footer } from './Footer'
 import ReactDOM from 'react-dom'
 import { act } from 'react-dom/test-utils'
 import React from 'react'
@@ -47,9 +46,9 @@ describe('footer',() =>{
     let centerArea = Wrapper.querySelector('.footer_center')
     let rightArea = Wrapper.querySelector('.footer_right')
 
-    expect(leftArea).not.toEqual({})
-    expect(centerArea).not.toEqual({})
-    expect(rightArea).not.toEqual({})
+    expect(leftArea).not.toEqual(null)
+    expect(centerArea).not.toEqual(null)
+    expect(rightArea).not.toEqual(null)
   })
 
   it('displays all footer links', () => {

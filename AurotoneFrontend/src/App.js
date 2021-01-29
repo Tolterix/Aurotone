@@ -7,38 +7,31 @@ import {
   
 } from 'react-router-dom';
 
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import { Header } from './components/Header/Header'
+import { Footer } from './components/Footer/Footer'
+import { Landing } from './components/Landing/Landing'
 
 export default function App() {
 
   return (
     <Router>
-      <Header />
-      
+      { window.location.pathname.includes('login') || window.location.pathname.includes('landing') ? null : <Header /> }
+
       <Switch>
         <Route exact path='/'>
           {/*Put homepage here */}
         </Route>
 
-        <Route exact path='/LandingPage'>
-          {/* <LandingPage /> */}
+        <Route exact path='/landing'>
+          <Landing />
         </Route>
 
-        <Route exact path='/LoginPage'>
+        <Route exact path='/login'>
           {/* <LoginPage /> */}
-        </Route>
-
-        <Route exact path='/ProblemBoardPage'>
-          {/* <ProblemBoardPage /> */}
-        </Route>
-
-        <Route path='/'>
-          {/* <ProblemBoardPage /> */}
         </Route>
       </Switch>
 
-      <Footer />
+      { window.location.pathname.includes('login') || window.location.pathname.includes('landing') ? null : <Footer /> }
     </Router>
     
   );

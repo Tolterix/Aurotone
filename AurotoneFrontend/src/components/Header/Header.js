@@ -5,7 +5,7 @@ import { GlobalContext } from '../../GlobalState'
 
 import DehazeIcon from '@material-ui/icons/Dehaze';
   
-export default function Header() {
+const Header = () => {
   let { AppName } = React.useContext(GlobalContext)
 
   return (
@@ -28,3 +28,5 @@ export default function Header() {
     </header>
   );
 }
+
+export { Header }
